@@ -5,6 +5,8 @@ import AddPersonInput   from './AddPersonInput'
 import NameFilterInput  from './NameFilterInput'
 import PersonTable      from './PersonTable'
 
+const baseUrl = '/api/persons'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -18,7 +20,8 @@ class App extends React.Component {
 
   componentWillMount() {
     axios
-      .get('http://localhost:3001/api/persons')
+      //.get('http://localhost:3001/api/persons')
+      .get(baseUrl)
       .then(response => {
         this.setState({ persons: response.data })
       })
