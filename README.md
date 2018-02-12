@@ -1,1 +1,1 @@
-# puhelinluettelo_frontend
+# puhelinluettelo frontend (3.9 - ?)
